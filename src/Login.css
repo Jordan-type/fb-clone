@@ -4,21 +4,23 @@
   height: 100vh;
 }
 
+.login > div > img {
+  object-fit: contain;
+  height: 150px
+}
+
 .login > button {
   width: 300px;
+  text-transform: none;
+  border: 1px solid #2e81f4;
   background-color: #2e81f4;
   color: #eff2f5;
-  font-weight: 800;
+  font-size: 16px;
 }
 
 .login > button:hover {
   background-color: white;
   color: #2e81f4;
-}
-
-.login > div > img {
-  object-fit: contain;
-  height: 150px
 }
 
 .login > div {

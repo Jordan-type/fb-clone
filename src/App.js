@@ -1,15 +1,17 @@
 import React from 'react'
+import './App.css';
 import Login from './Login'
 import Header from './Header'
 import Sidebar from './Sidebar'
 import Feed from './Feed'
 import Widgets from './Widgets'
-import './App.css';
+import { useStateValue } from './StateProvider'
 
 function App() {
-  const user = null;
+  const [{ user }, dispatch] = useStateValue()
+
   return (
-    // Bem naming convention
+    // bem naming convention // data layer || ==> redux / reactContext API
     <div className="app">
       {!user ? (
         <Login />

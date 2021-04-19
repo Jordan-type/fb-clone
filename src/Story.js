@@ -7,7 +7,7 @@ function Story({ image, profileSrc, title}) {
     <div style={{ backgroundImage: `url(${image})` }} className='story'>
     {/* // Story */}
     <Avatar className='story__avatar' src={ profileSrc } />
-    <h4>{ title }</h4>
+    <h6>{ title }</h6>
     </div>
   );
 }
